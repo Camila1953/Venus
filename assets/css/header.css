@@ -1,0 +1,57 @@
+.header{
+    width: auto;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #867070;
+}
+
+.logo-name{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 2.5rem;
+}
+
+.name-web{
+    font-family: 'Euphoria Script', cursive;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.buscador{
+    padding: 9px 10px 9px 35px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 15px;
+    border: 1.5px solid #ffffff;
+    background: #E4D0D0 url("../img/icon/search.png") no-repeat 9px center;
+    width: 80px;
+    transition: all .5s;
+}
+
+.buscador:hover{
+    width: 180px;
+    background-color: #c6b5b5;
+    border-radius: #a19494;
+    box-shadow: 0 0 5px #c6b5b5;
+}
+
+.btn{
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1.5px solid #ffffff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+    .header{
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        padding: .6rem;
+    }
+}

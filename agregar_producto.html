@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" type="image/PNG" href="assets/img/venus-logo2.png"/>
+    <title>Venus</title>
+
+    <script src="https://kit.fontawesome.com/5541d79d90.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/agregar_producto.css">
+    <link rel="stylesheet" href="assets/css/pie-de-pagina.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-name">
+            <img class="logo" src="assets/img/venus-logo2.png" alt="Logo">
+            <h5 class="name-web">Venus</h5>
+        </div>
+        <a href="./login.html"><button class="btn"><span class="text-btn">Menú Administrador</span></button></a>
+    </header>
+
+    <h3 class="titulo">Agregar Producto:</h3>
+
+    <section class="agregar-productos">
+        <div class="container">
+            <input type="file" id="file" accept="imgae/*" hidden>
+            <div class="img-area" data-img="">
+                <i class="fa-solid fa-cloud-arrow-up icon"></i>
+                <h3>Subir Imagen</h3>
+                <p>Tamaño de la imagen inferior a <span>440KB</span></p>
+            </div>
+            <button class="select-image">Seleccionar Imagen</button>
+        </div>
+
+        <div class="formulario-info">
+            <form>
+                <input type="text" required>
+                <label for="">Título</label>
+                <input type="number" required>
+                <label for="">Precio</label>
+                <!-- <input type="text" name="" placeholder="Título" class="campo" id="">
+                <input type="number" name="" placeholder="Precio" class="campo" id=""> -->
+                <textarea name="mensaje" placeholder="Ej: El artículo es..." class=""></textarea>
+                <button class="btn-formulario">Agregar Producto</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="pie-de-pagina">
+        <h3>Desarrollado por Camila Gonzales</h3>
+        <h5>2023</h5>
+    </section>
+
+
+    <script src="./js/agregar.js"></script>
+</body>
+</html>

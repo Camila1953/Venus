@@ -1,0 +1,113 @@
+:root{
+    --curve: 40;
+}
+
+.edicion{
+    width: auto;
+    height: 4rem;
+    margin: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edicion-titulo{
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding: 4rem 0 0 3rem;
+}
+
+.productos .edicion a{
+    font-size: 1.5rem;
+    padding: 4rem 3rem 0 0;
+}
+
+.titulo-principal{
+    font-weight: 200;
+    font-size: 3rem;
+    padding: 4rem 0 0 6rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 5vw;
+}
+
+.card{
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    background: white;
+}
+
+.card-img{
+    width: 100%;
+    height: auto;
+}
+
+.container-inf{
+    width: auto;
+    height: 60%;
+    padding: 1rem;
+}
+
+
+.card-title{
+    font-size: 1em;
+    padding: .5rem;
+    color: #6a515e;
+}
+
+.card-precio{
+    font-size: 0.8rem;
+    padding: .5rem;
+    color: #d7bdca;
+}
+
+.card-description{
+    height: 6rem;
+    padding: .5rem;
+    color: #d7bdca;
+    overflow: hidden;
+}
+
+.btn-edicion{
+    padding: .5rem 0rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.delete{
+    margin-right: 4rem;
+}
+
+@media screen and (max-width: 464px) {
+    .edicion{
+        flex-direction: column;
+        height: 15rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 2rem 3rem;
+    }
+    
+    .edicion-titulo{
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+    
+    .productos .edicion a{
+        padding: 2.5rem 3rem;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .edicion-titulo{
+        font-size: 2.2rem;
+    }
+}

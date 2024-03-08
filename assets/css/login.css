@@ -1,0 +1,123 @@
+body{
+    background: #000000;
+    background-image: url(../img/login.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.header{
+    height: 4rem;
+    background: transparent;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 82vh;
+}
+
+.container-login{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    background: transparent;
+    border: 2px solid #ffffff80;
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container-input{
+    position: relative;
+    margin: 1.875rem 0;
+    width: 24rem;
+    font-weight: 400;
+    border-bottom: 2px solid #fff;
+}
+
+.container-input label{
+    position: absolute;
+    top: 50%;
+    left: 0.313rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -0.313rem;
+}
+
+.container-input input{
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 2.188rem 0 0.313rem;
+}
+
+.container-input .icon-login{
+    width: 1.5rem;
+    position: absolute;
+    right: 0.5rem;
+    font-size: 1.2rem;
+    top: 1.25rem;
+}
+
+button{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    background: #dcdcdc58;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.pie-de-pagina{
+    background: transparent;
+}
+
+@media screen and (max-width: 585px) {
+    .container-login{
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .container-input{
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container-login{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+
+    .container-input{
+        /* margin: 1.875rem 0; */
+        width: 16rem;
+    }
+}

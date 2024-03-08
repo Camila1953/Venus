@@ -1,0 +1,102 @@
+:root{
+    --curve: 40;
+}
+
+.titulo-principal{
+    font-weight: 200;
+    font-size: 3rem;
+    padding: 4rem 0 0 6rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 5vw;
+}
+
+.card{
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: calc(var(--curve) *1px);
+    -webkit-border-radius: calc(var(--curve) * 1px);
+    -moz-border-radius: calc(var(--curve) * 1px);
+    -ms-border-radius: calc(var(--curve) * 1px);
+    -o-border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+}
+
+.card-img{
+    width: 100%;
+    height: auto;
+}
+
+.card-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: calc(var(--curve) * 1px);
+    background: #fff;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+
+.card:hover .card-overlay{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.card-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;
+    background-color: #fff;
+    padding: 2em;
+    transform: translateY(-100%);
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover .card-header{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.card-title{
+    font-size: 1em;
+    margin: 0 0 0.3em;
+    color: #6a515e;
+}
+
+.card-precio{
+    font-size: 0.8em;
+    color: #d7bdca;
+}
+
+.card-description{
+    padding: 0 2em 7em;
+    margin: 0;
+    color: #d7bdca;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}

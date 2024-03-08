@@ -1,0 +1,55 @@
+.banner{
+    background-image: linear-gradient(#1e130c60,#9a84784e),url(../img/married4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 92vh;
+}
+
+.promo{
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 32rem 2rem 0 0;
+    text-align: end;
+}
+
+.desc{
+    color: #FFD4D4;
+}
+
+.btn-promo{
+    margin-top: .5rem;
+    padding: .3rem 1.5rem;
+    border-radius: 10px;
+    border: 1.5px solid #ffffff;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn-promo:hover{
+    background: #c8b9b9;
+    /* color: black; */
+}
+
+.text-btn-promo{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 575px) {
+    .banner{
+        height: 60vh;
+    }
+
+    .promo{
+        font-size: 1.7rem;
+        padding: 23rem 1rem 0 0;;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .promo{
+        font-size: 1.7rem;
+        padding: 22rem 1rem 0 0;;
+    }
+}
